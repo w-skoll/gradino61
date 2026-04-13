@@ -21,7 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
         >
-          <p className="hero__location">Curva Sud &middot;a Sinistra del Tabellone</p>
+          <p className="hero__location">Curva Sud</p>
           <p className="hero__date">EST. 22 Gennaio 2017</p>
         </motion.div>
       </div>
