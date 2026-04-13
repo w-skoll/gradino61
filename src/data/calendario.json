@@ -1,0 +1,20 @@
+[
+  {
+    "date": "18 Apr 2026",
+    "type": "CASA",
+    "avversario": "Atalanta",
+    "stadio": "Olimpico"
+  },
+  {
+    "date": "26 Apr 2026",
+    "type": "TRASFERTA",
+    "avversario": "Bologna",
+    "stadio": "Dall'Ara"
+  },
+  {
+    "date": "03 Mag 2026",
+    "type": "CASA",
+    "avversario": "Fiorentina",
+    "stadio": "Olimpico"
+  }
+]

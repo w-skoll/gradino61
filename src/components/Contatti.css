@@ -1,0 +1,72 @@
+.contatti__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contatti__title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 3rem;
+}
+
+.contatti__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px; margin-bottom: 24px;
+}
+
+.contatti__item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  background: var(--surface);
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.contatti__item:hover {
+  border-left-color: var(--yellow);
+  background: rgba(245, 168, 0, 0.04);
+}
+
+.contatti__item:hover .contatti__handle {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  color: var(--white);
+}
+
+.contatti__icon {
+  color: var(--yellow);
+}
+
+.contatti__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.contatti__platform {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.contatti__handle {
+  font-size: 14px;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+
+.contatti__note {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 400px;
+  line-height: 1.6;
+}

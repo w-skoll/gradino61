@@ -1,0 +1,17 @@
+.stripe-divider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stripe-top {
+  height: 18px;
+  background: var(--yellow);
+  width: 100%;
+}
+
+.stripe-bottom {
+  height: 10px;
+  background: var(--bordeaux);
+  width: 100%;
+}

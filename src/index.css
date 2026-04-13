@@ -1,0 +1,140 @@
+/* ============================================
+   GRADINO61 – GLOBAL DESIGN SYSTEM
+   ============================================ */
+
+/* --- CSS Variables --- */
+:root {
+  --black: #000000;
+  --yellow: #F5A800;
+  --bordeaux: #7A1C1C;
+  --white: #FFFFFF;
+  --muted: rgba(255, 255, 255, 0.55);
+  --surface: #111111;
+  --max-width: 1100px;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--yellow);
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--white);
+  line-height: 1.05;
+  letter-spacing: 1px;
+}
+
+.section-label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: var(--yellow);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* --- Layout --- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.btn-primary:hover {
+  color: var(--black);
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn-secondary:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bordeaux);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
+/* --- Selection --- */
+::selection {
+  background: var(--yellow);
+  color: var(--black);
+}

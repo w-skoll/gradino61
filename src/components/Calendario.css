@@ -1,0 +1,129 @@
+.calendario__header {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.calendario__title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 0.25rem;
+}
+
+.calendario__live-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.calendario__list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.match-row {
+  display: grid;
+  grid-template-columns: 140px auto 1fr auto;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 18px 20px;
+  background: var(--black);
+  border-left: 3px solid var(--yellow);
+  transition: background 0.2s ease;
+}
+
+.match-row:hover {
+  background: rgba(245, 168, 0, 0.04);
+}
+
+.match-row--alt {
+  background: var(--surface);
+}
+
+.match-row--alt:hover {
+  background: rgba(245, 168, 0, 0.06);
+}
+
+.match-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.match-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+
+.match-badge--casa {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.match-badge--trasferta {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  background: transparent;
+}
+
+.match-avversario {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.match-stadio {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.calendario__footer {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calendario__loading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 560px) {
+  .match-row {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.5rem 1rem;
+  }
+  .match-date { order: 1; }
+  .match-badge { order: 2; }
+  .match-avversario { order: 3; grid-column: 1 / -1; font-size: 26px; }
+  .match-stadio { order: 4; grid-column: 1 / -1; text-align: left; }
+}

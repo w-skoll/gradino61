@@ -1,0 +1,33 @@
+.galleria__title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 2.5rem;
+}
+
+.galleria__widget-container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.galleria__placeholder {
+  background: var(--surface);
+  border: 1px dashed var(--yellow);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.8;
+}
+
+.galleria__placeholder p {
+  font-size: 22px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.galleria__placeholder span {
+  font-size: 13px;
+  color: var(--muted);
+}

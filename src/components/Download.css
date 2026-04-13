@@ -1,0 +1,85 @@
+.download__header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.download__title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 0.5rem;
+}
+
+.download__note {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.download__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.download-card {
+  background: var(--surface);
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.download-card:hover {
+  border-color: var(--yellow);
+  transform: translateY(-4px);
+}
+
+.download-card__preview {
+  aspect-ratio: 1 / 1;
+  background: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.download-card__preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.download-card:hover .download-card__preview img {
+  opacity: 1;
+}
+
+.download-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+.download-card__name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.download-card__btn {
+  width: 100%;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .download__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .download__grid { grid-template-columns: 1fr; }
+}
