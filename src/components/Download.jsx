@@ -5,8 +5,8 @@ import './Download.css';
 const downloads = Array.from({ length: 16 }, (_, i) => ({
   id: `dl${i + 1}`,
   name: `Documento ${i + 1}`,
-  img: `/download/file-${i + 1}.png`,
-  file: `/download/file-${i + 1}.pdf`
+  img: `./download/file-${i + 1}.png`,
+  file: `./download/file-${i + 1}.pdf`
 }));
 
 function DownloadCard({ item, index }) {

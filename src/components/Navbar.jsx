@@ -39,7 +39,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`} ref={menuRef} id="navbar">
       <div className="navbar__inner">
         <a href="#hero" className="navbar__logo" aria-label="Gradino61 home">
-          <img src="/logo_principale.png" alt="Gradino61 logo" height="36" />
+          <img src="./logo_principale.png" alt="Gradino61 logo" height="36" />
         </a>
 
         {/* Desktop Links */}

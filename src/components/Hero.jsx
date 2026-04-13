@@ -12,7 +12,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: 'easeOut' }}
         >
-          <img src="/logo_principale_b.png" alt="Gradino61" className="hero__logo" />
+          <img src="./logo_principale_b.png" alt="Gradino61" className="hero__logo" />
         </motion.div>
 
         <motion.div

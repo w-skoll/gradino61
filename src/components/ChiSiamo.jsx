@@ -61,7 +61,7 @@ export default function ChiSiamo() {
 
           <FadeIn delay={0.2} direction="right">
             <div className="chi-siamo__image-wrap">
-              <img src="/chisiamo.jpeg" alt="La curva del Gradino 61" className="chi-siamo__image" />
+              <img src="./chisiamo.jpeg" alt="La curva del Gradino 61" className="chi-siamo__image" />
             </div>
           </FadeIn>
         </div>

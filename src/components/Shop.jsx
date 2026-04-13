@@ -13,9 +13,9 @@ const InstagramIcon = ({ size = 16, className }) => (
 );
 
 const products = [
-  { id: 'p1', name: 'Sciarpa Gradino61', price: '35€', image: '/sciarpa.png' },
-  { id: 'p2', name: 'T-Shirt Gradino61', price: '25€', image: '/tshirt.png' },
-  { id: 'p3', name: 'Cappellino', price: '20€', image: '/cappellino.png' },
+  { id: 'p1', name: 'Sciarpa Gradino61', price: '35€', image: './sciarpa.png' },
+  { id: 'p2', name: 'T-Shirt Gradino61', price: '25€', image: './tshirt.png' },
+  { id: 'p3', name: 'Cappellino', price: '20€', image: './cappellino.png' },
 ];
 
 function ProductCard({ product, index }) {

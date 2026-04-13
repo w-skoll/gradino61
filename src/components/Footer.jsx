@@ -8,7 +8,7 @@ export default function Footer() {
       <StripeDivider />
       <div className="footer__inner container">
         <div className="footer__col footer__col--left">
-          <img src="/logo_principale.png" alt="Gradino61" className="footer__logo" />
+          <img src="./logo_principale.png" alt="Gradino61" className="footer__logo" />
         </div>
         <div className="footer__col footer__col--center">
           <p className="footer__text">GRADINO 61 &middot; CURVA SUD &middot; ROMA</p>
